@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    flex: 1;
+}
+
+.navbar__right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
