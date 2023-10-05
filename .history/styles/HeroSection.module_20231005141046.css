@@ -1,0 +1,13 @@
+.heroSection {
+    display: flex;
+}
+
+.heroSection div{
+    width: 50%;
+}
+
+.heroSec__leftLargeTxt {
+    font-size: 20px;
+    color: #111111;
+
+}

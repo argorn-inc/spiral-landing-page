@@ -1,0 +1,60 @@
+.heroSection {
+    display: flex;
+}
+
+.heroSec__left {
+    width: 50%;
+    padding: 30px;
+    width: 576px;
+    height: 126px;
+    top: 213px;
+    left: 137px;
+
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+}
+
+.download p{
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+ 
+}
+
+.download__bottons img{
+   height: 70px;
+}
+
+
+.heroSec__right {
+    width: 50%;
+    overflow: hidden;
+    top: 213px;
+}
+
+.heroSec__leftLargeTxt {
+    font-family: Nunito;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.heroSec__rightGradient {
+    background: linear-gradient(180deg, rgba(0, 149, 168, 0) 0%, #0095A8 100%);
+    width: 681px;
+    height: 681px;
+    top: 133px;
+    left: 1014px;
+    border-radius: 50%;
+
+}

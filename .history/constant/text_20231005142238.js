@@ -1,0 +1,4 @@
+export const homeText = {
+heroLgTxt: 
+}
+  

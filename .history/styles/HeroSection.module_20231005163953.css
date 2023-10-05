@@ -1,0 +1,73 @@
+.heroSection {
+    display: flex;
+    margin: 50px 80px;
+    padding: 10px;
+}
+
+.heroSec__left {
+    padding: 30px;
+    width: 576px;
+    height: 126px;
+    /* margin-left: 10px; */
+
+}
+
+.download{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.download p{
+    font-family: ;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+ 
+}
+
+.download__bottons{
+display: flex;
+align-items: center;
+
+}
+
+.download__bottons img{
+    margin-top: -15px;
+   height: 60px;
+   width: 160px;
+}
+
+
+.heroSec__right {
+    /* width: 50%; */
+    overflow: hidden;
+    top: 213px;
+    /* right: -200px; */
+}
+
+.heroSec__leftLargeTxt {
+    font-family: Nunito;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.heroSec__rightGradient {
+    background: linear-gradient(180deg, rgba(0, 149, 168, 0) 0%, #0095A8 100%);
+    width: 481px;
+    height: 481px;
+    top: 133px;
+    /* left: 1014px; */
+    right: -200px;
+    border-radius: 50%;
+    /* position: absolute; */
+    overflow: hidden !important;
+
+}
