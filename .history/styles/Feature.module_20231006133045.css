@@ -1,0 +1,13 @@
+.feature{
+margin-top: 100px;
+background: #000;
+}
+
+/* Assuming you want to set a background image for a div with the class "container" */
+
+  
+  /* Optionally, you can set a background color behind the image */
+  .container {
+    background-color: #f0f0f0; /* Replace with your desired color */
+  }
+  

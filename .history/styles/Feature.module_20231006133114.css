@@ -1,0 +1,12 @@
+.feature {
+    margin-top: 100px;
+    background: #000;
+
+    background-image: url('path/to/your-image.jpg');
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+

@@ -1,0 +1,12 @@
+.downloadApp{
+    display: flex;
+
+}
+
+.left__text p{
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;    
+}

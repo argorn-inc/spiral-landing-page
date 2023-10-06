@@ -1,0 +1,29 @@
+.downloadApp {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.left__text p {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+.happyUserImage__wrapper {
+    min-height: 270px;
+    max-height: 300px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.

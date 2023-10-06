@@ -1,0 +1,8 @@
+.footer,
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    background: #0095A8;
+}
+
+.footer__content {}

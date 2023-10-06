@@ -1,0 +1,38 @@
+.footer,
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    background: #0095A8;
+}
+
+.contact__us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+
+height: 141px
+matop: -81px
+left: 135px
+
+}
+
+.contact__usDivider {
+    width: 1px;
+    height: 100px;
+    background: red;
+    border: none;
+}
+
+.footer__content {
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.media__handles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}

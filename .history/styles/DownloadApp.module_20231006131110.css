@@ -1,0 +1,71 @@
+.downloadApp {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 100px;
+}
+
+.downloadApp__left{
+    display: flex;
+    flex-direction: column;
+}
+
+.download__bottons img {
+    margin-top: 55px;
+    height: 60px;
+    width: 160px;
+}
+
+
+.left__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.left__text span{
+    margin-top: -20px;
+}
+
+.left__text p {
+    font-size: 31px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #232233;
+    ;
+}
+
+.downloadApp__right {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.happyUserImage__wrapper {
+    width: 100%;
+    position: relative;
+    width: 474px;
+    height: 417px;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.happyUserImage {
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 3px 3px;
+    z-index: 0;
+}
+
+.prayerPhone {
+    margin-top: -170px;
+    z-index: 100 !important;
+    margin-left: -150px;
+    width: 250px;
+    height: 350px;
+
+}

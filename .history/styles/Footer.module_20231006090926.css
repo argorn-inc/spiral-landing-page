@@ -1,0 +1,21 @@
+.footer,
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    background: #0095A8;
+}
+
+.contact__
+
+.footer__content {
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.media__handles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}

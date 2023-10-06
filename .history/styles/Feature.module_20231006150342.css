@@ -1,0 +1,10 @@
+.feature {
+    margin-top: 100px;
+
+
+    background-image: url('../public/assets/featureBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+}

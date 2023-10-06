@@ -1,0 +1,20 @@
+.feature{
+margin-top: 100px;
+background: #000;
+
+background-image: url('path/to/your-image.jpg');
+  
+/* You can also use other background properties to control the image's behavior */
+background-repeat: no-repeat; /* Prevents image from repeating */
+background-size: cover; /* Scales the image to cover the entire container */
+background-position: center center;
+}
+
+/* Assuming you want to set a background image for a div with the class "container" */
+
+  
+  /* Optionally, you can set a background color behind the image */
+  .container {
+    background-color: #f0f0f0; /* Replace with your desired color */
+  }
+  
