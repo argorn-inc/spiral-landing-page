@@ -50,9 +50,9 @@ const Footer = () => {
                     <Twitter className={styles.mediaIcons} /> <hr />
                     <Youtube className={styles.mediaIcons} />
                 </div>
+           <hr className={styles.bottom__divider} />
             </div>
 
-            <p>  <hr className={styles.bottom__ivider} /></p>
             <div className={styles.footer__bottom}>
                 <Copyright className={styles.copyrightIcon} />
                 <p>
