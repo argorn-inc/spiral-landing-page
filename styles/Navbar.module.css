@@ -22,25 +22,25 @@
 .navbar__right {
     display: flex;
     align-items: center;
-    /* justify-content: ; */
     margin-right: 50px;
 }
 
 .navbar__right p {
-    font-size: 17px;
+    font-size: 16px;
     width: 100px;
+    font-weight: 600;
 }
 
 .navbar__right button {
     background: #0095A8;
     border: none;
     padding: 10px;
-    font-size: 17px;
+    font-size: 16px;
     border-radius: 10px;
     color: #EBF4F5;
     width: 130px;
     height: 38px;
     padding: 6.36px, 0px, 6.36px, 0px;
     border-radius: 6.36px;
-    gap: 6.36px;
+    font-weight: 700;
 }

@@ -4,6 +4,13 @@
     padding: 10px;
     user-select: none;
 }
+.heroSec__leftLargeTxt {
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 
 .heroSec__left {
     width: 50%;
@@ -71,14 +78,6 @@
     right: -100px;
 }
 
-.heroSec__leftLargeTxt {
-    font-family: Nunito;
-    font-size: 49px;
-    font-weight: 700;
-    line-height: 63px;
-    letter-spacing: 0em;
-    text-align: left;
-}
 
 .heroSec__rightGradient {
     position: absolute;
