@@ -9,11 +9,12 @@ const HeroSection = () => {
             <div className={styles.heroSec__left}>
                 <p className={styles.heroSec__leftLargeTxt}>
                     {homeText.heroLgTxt1}
+                    <span style={{ color: '#0095A8' }} className={styles.heroSec__leftLargeTxt}>
+                        {homeText.heroLgTxt2}
+                    </span>
                 </p>
-                <p className={styles.heroSec__leftLargeTxt}>
-                    {homeText.heroLgTxt2}
-                </p>
-                <p>
+
+                <p style={{ color: '#0095A8', marginTop: '-20px' }} >
                     <span>
                         {homeText.heroSmTxt}
                     </span>

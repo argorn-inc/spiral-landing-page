@@ -116,3 +116,52 @@
     }
 
 }
+
+@media (max-width: 800px) {
+    .featureTop {
+        width: 75%;
+    }
+
+    .featureContent__container {
+        flex-direction: column;
+        align-items: center;
+        max-height: 1000px;
+    }
+
+    .featureCard__list {
+        gap: 20px;
+    }
+
+    .featurePhone__wrapper {
+        width: 227.34px;
+        height: 460px;
+        margin: 90px 0;
+    }
+
+    .featurePhone__wrapper img {
+        width: 227.34px;
+        height: 460px;
+    }
+
+    .featureCard {
+        width: 290px;
+        height: 70px;
+        border-radius: 5px;
+    }
+
+    .checkIcon {
+        margin-top: -10px;
+    }
+
+    .featureCard__text p {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 15px;
+
+    }
+
+    .featureCard__text span {
+        font-size: 11px;
+        font-weight: 400;
+    }
+}

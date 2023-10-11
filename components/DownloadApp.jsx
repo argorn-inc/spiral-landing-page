@@ -6,7 +6,6 @@ import Image from 'next/image';
 const DownloadApp = () => {
     return (
         <div className={styles.downloadApp}>
-
             <div className={styles.downloadApp__left}>
                 <div className={styles.left__text}>
                     <p>{homeText.downloadAPP_lgTxt}</p>
