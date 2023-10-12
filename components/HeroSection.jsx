@@ -58,10 +58,27 @@ const HeroSection = () => {
                             alt=''
                         />
                     </div>
-
                 </div>
-                <div className={styles.gradient__box}>     <div className={styles.heroSec__rightGradient} /></div>
-
+                <div className={styles.gradient__box}>
+                    <div className={styles.heroSec__rightGradient} />
+                </div>
+            </div>
+            <div className={`${styles.download} ${styles.download__sm}`}>
+                <p>DOWNLOAD APP NOW</p>
+                <div className={styles.download__bottons}>
+                    <Image
+                        src='/assets/playstore.svg'
+                        width={200}
+                        height={400}
+                        alt=''
+                    />
+                    <Image
+                        src='/assets/appstore.svg'
+                        width={200}
+                        height={400}
+                        alt=''
+                    />
+                </div>
             </div>
         </div>
     )

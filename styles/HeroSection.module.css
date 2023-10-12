@@ -32,6 +32,10 @@
     line-height: 24px;
 }
 
+.download__sm{
+    display: none !important;
+}
+
 .download {
     display: flex;
     flex-direction: column;
@@ -162,6 +166,18 @@
         padding: 0 20px;
     }
 
+    .download{
+        display: none;
+    }
+
+    .download__sm{
+        display: flex !important;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
     .heroSec__left {
         width: 100%;
         height: fit-content;
@@ -176,11 +192,12 @@
         width: 100%;
         height: fit-content;
         margin-top: 50px;
+        justify-content: center;
     }
 
     .iPhones {
-        margin-left: 50px;
         height: fit-content;
+        margin-left: -50px;
     }
 
     .iPhone13__wrapper {
@@ -207,14 +224,7 @@
     }
 
     .gradient__box {
-        right: 0 !important;
-        position: absolute;
-    }
-
-    .heroSec__rightGradient {
-        width: 323.96px;
-        height: 323.96px;
-        right: 0
+      display: none;
     }
 }
 
@@ -257,17 +267,6 @@
         right: -7%;
         transform: translateX(60%);
     }
-
-    .gradient__box {
-        position: absolute;
-    }
-
-    .heroSec__rightGradient {
-        width: 323.96px;
-        height: 323.96px;
-        top: 30px;
-        right: -110px;
-    }
 }
 
 @media screen and (min-width: 620px) and (max-width:799px) {
@@ -289,10 +288,4 @@
         height: 100%;
     }
 
-    .heroSec__rightGradient {
-        width: 470px !important;
-        height: 470px !important;
-        right: 0;
-        top: 150px;
-    }
 }
