@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     background: #0095A8;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .contact__us {
@@ -20,7 +20,7 @@
     margin: -80px auto 0 auto;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 2px rgb(0, 0, 0, 0.05);
-
+    padding: 10px 0;
 }
 
 .contact__usLeft,
@@ -36,7 +36,6 @@
     align-items: center;
     justify-content: center;
     color: #0095A8 !important;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     text-decoration: none !important;
 }
@@ -103,6 +102,7 @@
     height: 1px;
     width: 85%;
     background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
 }
 
 .footer__bottom {
@@ -112,7 +112,8 @@
     width: 100%;
     color: #dddddd !important;
     font-size: 16px;
-    margin-top: -30px
+    background: #0095A8;
+    z-index: 100;
 }
 
 .footer__bottom p {
@@ -122,4 +123,86 @@
 .copyrightIcon {
     color: #dddddd !important;
     margin-right: 15px;
+}
+
+@media (max-width: 800px) {
+    .footer {
+        height: 180px;
+        margin-top: 200px;
+    }
+
+    .contact__us {
+        flex-direction: column;
+        gap: 8px;
+        background: none;
+        box-shadow: none;
+        margin-top: -140px;
+    }
+
+    .contact__usRight,
+    .contact__usLeft {
+        background: #fff;
+        width: 60%;
+        height: 65px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 1px 2px rgb(0, 0, 0, 0.05);
+    }
+
+    .contact__usIcon {
+        height: 26px !important;
+        width: 26px !important;
+    }
+
+    .contact__us a p:first-child {
+        height: 40px;
+        width: 40px;
+    }
+
+    .footer__content {
+        margin-top: 50px;
+    }
+
+    .footer__content img {
+        width: 75px;
+        height: 25px;
+    }
+
+    .footer__content p {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+
+    }
+
+    .media__handles {
+        gap: 20px;
+        margin: 0;
+    }
+
+    .mediaIcons {
+        height: 18px;
+        width: 18px;
+    }
+
+    .footer__bottom p {
+        font-size: 8px;
+    }
+
+    .copyrightIcon {
+        height: 12px;
+        width: 12px;
+        margin-right: 5px;
+    }
+
+    .bottom__divider {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .contact__usRight,
+    .contact__usLeft {
+        width: 85%;
+    }
 }

@@ -1,14 +1,15 @@
 .downloadApp {
     display: flex;
-    justify-content: space-evenly;
     padding: 0 100px;
-    margin:100px 0;
+    margin: 100px 0;
     padding-bottom: 50px;
+    margin-top: 200px;
 }
 
-.downloadApp__left{
+.downloadApp__left {
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 
 .download__bottons img {
@@ -23,8 +24,9 @@
     flex-direction: column;
 }
 
-.left__text span{
+.left__text span {
     margin-top: -20px;
+    max-width: 550px;
 }
 
 .left__text p {
@@ -34,7 +36,7 @@
     line-height: 47px;
     letter-spacing: 0em;
     text-align: left;
-    color:  #232233;
+    color: #232233;
 }
 
 .downloadApp__right {
@@ -42,6 +44,7 @@
     position: relative;
     flex-direction: column;
     margin-top: 30px;
+
 }
 
 .happyUserImage__wrapper {
@@ -67,4 +70,93 @@
     margin-left: -150px;
     width: 250px;
     height: 350px;
+}
+
+
+@media screen and (min-width: 900px) and (max-width:1200px) {
+    .happyUserImage__wrapper {
+        width: 200px;
+        height: 300px;
+        left: 50px;
+    }
+
+    .happyUserImage {
+        height: 300px;
+        width: 370;
+    }
+
+    .prayerPhone {
+        margin-top: -120px;
+        margin-left: -70px;
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .downloadApp {
+        flex-direction: column;
+        padding: 10px !important;
+        margin-top: 0;
+    }
+
+    .downloadApp__left {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .left__text {
+        width: 80%;
+    }
+
+    .left__text p {
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .left__text span {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 21px;
+
+    }
+
+    .downloadApp__right {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .happyUserImage__wrapper {
+        width: 250px;
+        height: 220px;
+        border-radius: 5px;
+        position: relative;
+        margin-left: 80px;
+    }
+
+    .happyUserImage {
+        height: 100%;
+        width: 100%;
+    }
+
+    .prayerPhone {
+        width: 134px;
+        height: 179px;
+        border-radius: 3.86px;
+        margin-top: 130px;
+        margin-left: -200px;
+        position: absolute;
+        box-shadow:1px 10px 6px 3px rgba(0, 0, 0, 0.07);
+    }
+
+    .download__bottons {
+        width: 80%;
+    }
+
+    .download__bottons img {
+        width: 105px;
+        height: 31px;
+        margin: 30px 15px 0 0;
+    }
 }
