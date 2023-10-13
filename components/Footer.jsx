@@ -49,7 +49,7 @@ const Footer = () => {
                     <Facebook className={styles.mediaIcons} /> <hr />
                     <Instagram className={styles.mediaIcons} /> <hr />
                     <Twitter className={styles.mediaIcons} /> <hr />
-
+                    <Youtube className={styles.mediaIcons} />
                 </div>
                 <hr className={styles.bottom__divider} />
             </div>
