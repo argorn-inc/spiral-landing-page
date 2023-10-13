@@ -1,9 +1,9 @@
-import React from 'react';
+'use client'
+import React, { useRef } from 'react';
 import styles from '../styles/Footer.module.css';
 import {
     Facebook, Twitter,
     Instagram,
-    Youtube,
     Mail,
     Call,
     Copyright
@@ -11,8 +11,9 @@ import {
 import Image from 'next/image';
 
 const Footer = () => {
+    const footerRef = useRef(null);
     return (
-        <div className={styles.footer}>
+        <div  id="footer_section" ref={footerRef} className={styles.footer}>
             <div className={styles.contact__us}>
                 <div className={styles.contact__usLeft}>
                     <a
@@ -48,9 +49,9 @@ const Footer = () => {
                     <Facebook className={styles.mediaIcons} /> <hr />
                     <Instagram className={styles.mediaIcons} /> <hr />
                     <Twitter className={styles.mediaIcons} /> <hr />
-                    <Youtube className={styles.mediaIcons} />
+
                 </div>
-           <hr className={styles.bottom__divider} />
+                <hr className={styles.bottom__divider} />
             </div>
 
             <div className={styles.footer__bottom}>

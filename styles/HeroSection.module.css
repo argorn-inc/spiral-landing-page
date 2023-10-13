@@ -70,6 +70,7 @@
     width: 50%;
     margin-right: 100px;
     margin-top: -70px;
+    margin: 0 auto;
 }
 
 .gradient__box {
@@ -193,6 +194,7 @@
         height: fit-content;
         margin-top: 50px;
         justify-content: center;
+        transform: translateX(-10%);
     }
 
     .iPhones {
@@ -233,6 +235,7 @@
         width: 100%;
         height: fit-content;
         margin-top: 50px;
+        transform: translateX(-23%);
     }
 
     .heroSec__leftLargeTxt {

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const HeroSection = () => {
     return (
-        <div className={styles.heroSection}>
+        <div style={{ marginTop: '90px' }} className={styles.heroSection}>
             <div className={styles.heroSec__left}>
                 <p className={styles.heroSec__leftLargeTxt}>
                     {homeText.heroLgTxt1}
@@ -13,7 +13,6 @@ const HeroSection = () => {
                         {homeText.heroLgTxt2}
                     </span>
                 </p>
-
                 <p style={{ color: '#0095A8', marginTop: '-20px' }} >
                     <span>
                         {homeText.heroSmTxt}

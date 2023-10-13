@@ -1,12 +1,17 @@
-import React from 'react'
+'use client'
+import React, { useRef } from 'react';
 import styles from '../styles/Feature.module.css'
 import { CheckCircle } from '@mui/icons-material'
 import Image from 'next/image'
 import { homeText } from '@/constant/text';
 
 const Feature = () => {
+
+
+    const featureSection = useRef(null);
+
     return (
-        <div className={styles.feature}>
+        <div ref={featureSection} id='feature_section' className={styles.feature}>
             <div className={styles.featureTop__wrapper}>
                 <div className={styles.featureTop}>
                     <p>{homeText.feature_title}</p>

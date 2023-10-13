@@ -9,7 +9,10 @@
     z-index: 1000;
 }
 
-.menuIcon{display: none !important;}
+.menuIcon {
+    display: none !important;
+}
+
 .logo__container {
     flex: 1;
 }
@@ -26,10 +29,12 @@
     margin-right: 50px;
 }
 
-.navbar__right p {
+.navbar__right a {
     font-size: 16px;
     width: 100px;
     font-weight: 600;
+    text-decoration: none;
+    
 }
 
 .navbar__right button {
@@ -58,12 +63,12 @@
 }
 
 
-.drawerContent p {
+.drawerContent a {
     font-size: 16px;
     font-weight: 600;
     margin: 10px;
     color: #111111;
-
+    text-decoration: none;
 }
 
 .drawerContent button {
@@ -81,18 +86,20 @@
 
 @media screen and (max-width:800px) {
     .navbar {
-        height: 86px;
+        height: 50px;
         background: #fff;
         box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.05);
+        position: fixed;
     }
 
     .navbar__right {
         display: none;
     }
 
-    .drawerContent{
+    .drawerContent {
         display: flex !important;
     }
+
     .menuIcon {
         margin-right: 10px !important;
         height: 50px !important;
@@ -100,14 +107,14 @@
         display: flex !important;
     }
 
-    .closeIcon{
-        position: fixed!important;
+    .closeIcon {
+        position: fixed !important;
         right: 17px !important;
         top: 20px !important;
     }
 
-    .hideMenuIcon{
+    .hideMenuIcon {
         display: none !important;
     }
-    
+
 }

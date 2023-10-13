@@ -5,9 +5,9 @@ import Image from 'next/image';
 import { Close, Menu } from '@mui/icons-material';
 import { IconButton, Drawer } from '@mui/material';
 
-const Navbar = () => {
-    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+const Navbar = ({ scrollToSection }) => {
 
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const toggleDrawer = () => {
         setIsDrawerOpen((prev) => !prev);
     };
@@ -30,21 +30,26 @@ const Navbar = () => {
             </IconButton>
 
             <div className={styles.navbar__right}>
-                <p>About</p>
-                <p>Features</p>
-                <p>Contact</p>
-                <button type='button' aria-label='for authors'>For Authors</button>
+                {/* <a href='#_section'>About</a> */}
+                <a onClick={() => scrollToSection('#feature_section')} href='#feature_section'>Features</a>
+                <a onClick={() => scrollToSection('#footer_section')} href='#footer_section' >Contact</a>
+                <a href='https://spiraldevotionalapp.netlify.app/'>
+                    <button type='button' aria-label='for authors'>For Authors</button>
+                </a>
             </div>
-
-            <Drawer hideBackdrop={true} PaperProps={{ style: { marginTop: '85px' } }} anchor="top" open={isDrawerOpen} onClose={toggleDrawer}>
+            <Drawer onClick={toggleDrawer} hideBackdrop={true} PaperProps={{ style: { marginTop: '85px' } }} anchor="top" open={isDrawerOpen} onClose={toggleDrawer}>
                 {isDrawerOpen && <IconButton className={`${styles.menuIcon} ${styles.closeIcon}`} onClick={toggleDrawer}>
                     <Close style={{ height: '38px', width: '38px' }} />
                 </IconButton>}
                 <div className={styles.drawerContent}>
-                    <p>About</p>
-                    <p>Features</p>
-                    <p>Contact</p>
-                    <button type='button' aria-label='for authors'>For Authors</button>
+                    {/* <a href='#_section'>About</a> */}
+                    <a onClick={() => scrollToSection('#feature_section')} href='#feature_section' >Features</a>
+                    <a onClick={() => scrollToSection('#footer_section')} href='#footer_section'>Contact</a>
+
+                    <a href='https://spiraldevotionalapp.netlify.app/'>
+                        <button type='button' aria-label='for authors'>For Authors</button>
+                    </a>
+
                 </div>
             </Drawer>
         </div>
