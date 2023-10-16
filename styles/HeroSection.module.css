@@ -16,7 +16,6 @@
 .heroSec__left {
     width: 50%;
     height: 126px;
-
 }
 
 .heroSec__left p:nth-child(3) {
@@ -32,7 +31,7 @@
     line-height: 24px;
 }
 
-.download__sm{
+.download__sm {
     display: none !important;
 }
 
@@ -83,9 +82,22 @@
     width: 681px;
     height: 681px;
     top: 90px;
-    right: -450px;
+    right: -430px;
     border-radius: 50%;
     overflow: hidden !important;
+}
+
+.heroPhonesSm {
+    display: none !important;
+}
+
+.heroPhonesLg {
+    display: flex !important;
+}
+
+.iPhonesLg__wrapper{
+    margin-left: -82px !important;
+    margin-top: -80px;
 }
 
 .iPhones {
@@ -167,11 +179,11 @@
         padding: 0 20px;
     }
 
-    .download{
+    .download {
         display: none;
     }
 
-    .download__sm{
+    .download__sm {
         display: flex !important;
         width: 100%;
         justify-content: center;
@@ -195,6 +207,14 @@
         margin-top: 50px;
         justify-content: center;
         transform: translateX(-10%);
+    }
+
+    .heroPhonesSm {
+        display: flex !important;
+    }
+
+    .heroPhonesLg {
+        display: none !important;
     }
 
     .iPhones {
@@ -226,7 +246,7 @@
     }
 
     .gradient__box {
-      display: none;
+        display: none;
     }
 }
 

@@ -32,10 +32,11 @@ const Feature = () => {
                 </div>
                 <div className={styles.featurePhone__wrapper} >
                     <Image
-                        src='/assets/featurePhone.png'
+                        src='/assets/iPhone13.svg'
                         width={347}
                         height={700}
                         alt=''
+                        className={styles.featureIPhone13__img}
                     />
                 </div>
 
