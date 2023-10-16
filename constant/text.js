@@ -6,35 +6,35 @@ Elevate your daily devotion with Spiral, the mobile app designed to enrich your 
     downloadAPP_lgTxt: `Download App Now`,
     downloadAPP_smTxt: `Ready to elevate your daily devotion? Join the Spiral community and experience the difference in your spiritual life. Download the app now and embark on a journey of enlightenment and faith.`,
     feature_title: 'HOW WE DO IT',
-    featureTop_text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna.`,
+    featureTop_text: ` Deepen your relationship with God, one devotion at a time. In a world filled with constant distractions and busyness, we offer a serene oasis for your soul, a place to find solace, wisdom, and growth.`,
     featureCardText: {
         leftText: [
             {
                 title: 'DIVERSE CONCREGATIONS',
-                text: `Spiral helps you deepen your connection with your faith and beliefs, one devotion at a time.`
+                text: `Experience the unity of faith with content from different churches and preachers.`
             },
             {
                 title: 'COMMUNITY CONNECTIONS',
-                text: `Spiral helps you deepen your connection with your faith and beliefs, one devotion at a time.`
+                text: `Transcend the barriers of distance, and tap into a vibrant community of believers.`
             },
             {
                 title: 'PERSONALIZED REMINDERS',
-                text: `Spiral helps you deepen your connection with your faith and beliefs, one devotion at a time.`
+                text: `Get a daily nudge for an enriching devotional time that fit your schedule. `
             },
 
         ],
         rightText: [
             {
                 title: 'DAILY DEVOTION',
-                text: `Spiral helps you deepen your connection with your faith and beliefs, one devotion at a time.`
+                text: `Start each day with devotion: your daily spiritual compass to guide you.`
             },
             {
                 title: 'AUDIO SUPPORT',
-                text: `Spiral helps you deepen your connection with your faith and beliefs, one devotion at a time.`
+                text: `Amplify your spiritual journey with  the power of sound for you to listen on the go.`
             },
             {
                 title: 'INSPIRATIONAL CONTENT',
-                text: `Spiral helps you deepen your connection with your faith and beliefs, one devotion at a time.`
+                text: `Fuel your soul and uplift your spirit with  a daily dose of positivity and enlightenment.`
             },
         ],
     }
