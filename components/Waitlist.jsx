@@ -103,7 +103,7 @@ export default function WaitListModal({ toggleWaitListModal, isModalOpen, device
                         <input
                             type="text"
                             name="devotionalChoice"
-                            placeholder="Devotional Choice"
+                            placeholder="Which devotional book would you like to read"
                             value={formData.devotionalChoice}
                             onChange={handleChange}
                             className={styles.input}
