@@ -3,7 +3,7 @@ import styles from "../styles/HeroSection.module.css";
 import { homeText } from '@/constant/text';
 import Image from 'next/image';
 
-const HeroSection = () => {
+const HeroSection = ({toggleWaitListModal}) => {
     return (
         <div className={styles.heroSection}>
             <div className={styles.heroSec__left}>
@@ -27,12 +27,14 @@ const HeroSection = () => {
                             width={200}
                             height={400}
                             alt=''
+                            onClick={()=>toggleWaitListModal('android')}
                         />
                         <Image
                             src='/assets/appstore.svg'
                             width={200}
                             height={400}
                             alt=''
+                            onClick={()=>toggleWaitListModal('ios')}
                         />
                     </div>
                 </div>
@@ -60,12 +62,14 @@ const HeroSection = () => {
                         width={200}
                         height={400}
                         alt=''
+                        onClick={()=>toggleWaitListModal('android')}
                     />
                     <Image
                         src='/assets/appstore.svg'
                         width={200}
                         height={400}
                         alt=''
+                        onClick={()=>toggleWaitListModal('ios')}
                     />
                 </div>
             </div>
