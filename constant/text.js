@@ -1,16 +1,16 @@
 export const homeText = {
     heroLgTxt1: ` Nurturing Your Soul,`,
-    heroLgTxt2: ` One Devotion at a Time`,
+    heroLgTxt2: ` One Devotional a Day`,
     heroSmTxt: ` Explore a world of spirituality, community, and enlightenment right at your fingertips.
 Elevate your daily devotion with Spiral, the mobile app designed to enrich your spiritual journey.`,
-    downloadAPP_lgTxt: `Download App Now`,
+    downloadAPP_lgTxt: `Get Early Access`,
     downloadAPP_smTxt: `Ready to elevate your daily devotion? Join the Spiral community and experience the difference in your spiritual life. Download the app now and embark on a journey of enlightenment and faith.`,
     feature_title: 'HOW WE DO IT',
     featureTop_text: ` Deepen your relationship with God, one devotion at a time. In a world filled with constant distractions and busyness, we offer a serene oasis for your soul, a place to find solace, wisdom, and growth.`,
     featureCardText: {
         leftText: [
             {
-                title: 'DIVERSE CONCREGATIONS',
+                title: 'DIVERSE CONGREGATIONS',
                 text: `Experience the unity of faith with content from different churches and preachers.`
             },
             {
