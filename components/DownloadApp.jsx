@@ -3,7 +3,7 @@ import { homeText } from '@/constant/text';
 import styles from '../styles/DownloadApp.module.css'
 import Image from 'next/image';
 
-const DownloadApp = () => {
+const DownloadApp = ({ toggleWaitListModal }) => {
     return (
         <div className={styles.downloadApp}>
             <div className={styles.downloadApp__left}>
@@ -17,13 +17,14 @@ const DownloadApp = () => {
                         width={200}
                         height={400}
                         alt='play store'
-
+                        onClick={() => toggleWaitListModal('android')}
                     />
                     <Image
                         src='/assets/appstore.svg'
                         width={200}
                         height={400}
                         alt='app store'
+                        onClick={() => toggleWaitListModal('ios')}
                     />
 
                 </div>
