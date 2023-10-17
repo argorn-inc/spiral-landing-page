@@ -55,7 +55,7 @@ const HeroSection = ({toggleWaitListModal}) => {
                 </div>
             </div>
             <div className={`${styles.download} ${styles.download__sm}`}>
-                <p>DOWNLOAD APP NOW</p>
+                <p>GET EARLY ACCESS</p>
                 <div className={styles.download__bottons}>
                     <Image
                         src='/assets/playstore.svg'
