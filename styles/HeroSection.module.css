@@ -87,15 +87,7 @@
     overflow: hidden !important;
 }
 
-.heroPhonesSm {
-    display: none !important;
-}
-
-.heroPhonesLg {
-    display: flex !important;
-}
-
-.iPhonesLg__wrapper{
+.iPhones__wrapper{
     margin-left: -82px !important;
     margin-top: -80px;
 }
@@ -108,34 +100,6 @@
     height: fit-content;
 }
 
-.iPhone13__wrapper {
-    z-index: 10;
-    height: 650px;
-    margin-right: -150px;
-    position: relative;
-}
-
-.iPhone133__wrapper {
-    z-index: 1000;
-    height: 650px;
-}
-
-.iPhone13 {
-    position: relative;
-    height: auto;
-    width: auto;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.iPhone133 {
-    height: 650px;
-    position: absolute;
-    top: 92px;
-    right: -17%;
-    transform: translateX(50%);
-}
-
 @media screen and (min-width: 900px) and (max-width:1200px) {
     .heroSection {
         margin: 80px 50px;
@@ -146,28 +110,6 @@
         height: fit-content;
     }
 
-    .iPhone13__wrapper {
-        height: 150px;
-        margin-right: -100px;
-    }
-
-    .iPhone133__wrapper {
-        display: flex;
-        position: relative;
-    }
-
-    .iPhone13 {
-        height: 470px;
-        width: auto;
-        z-index: 0;
-    }
-
-    .iPhone133 {
-        top: 92px;
-        right: -17%;
-        transform: translateX(60%);
-
-    }
 }
 
 @media screen and (max-width:800px) {
@@ -204,45 +146,17 @@
     .heroSec__right {
         width: 100%;
         height: fit-content;
+        margin: 0;
         margin-top: 50px;
         justify-content: center;
-        transform: translateX(-10%);
-    }
-
-    .heroPhonesSm {
-        display: flex !important;
-    }
-
-    .heroPhonesLg {
-        display: none !important;
     }
 
     .iPhones {
         height: fit-content;
-        margin-left: -50px;
     }
 
-    .iPhone13__wrapper {
-        height: 150px;
-        margin-right: -100px;
-    }
-
-    .iPhone133__wrapper {
-        display: flex;
-        position: relative;
-    }
-
-    .iPhone13 {
-        width: 135.9px;
-        height: 274.99px;
-    }
-
-    .iPhone133 {
-        width: 136px;
-        height: 275px;
-        top: 65px;
-        right: -7%;
-        transform: translateX(60%);
+    .iPhones__wrapper{
+        margin: 0;
     }
 
     .gradient__box {
@@ -255,7 +169,6 @@
         width: 100%;
         height: fit-content;
         margin-top: 50px;
-        transform: translateX(-23%);
     }
 
     .heroSec__leftLargeTxt {
@@ -264,51 +177,25 @@
     }
 
     .iPhones {
-        margin-left: 50px;
+        margin-left: 0px !important;
         height: fit-content;
+        position: flex;
     }
 
-    .iPhone13__wrapper {
-        height: 150px;
-        margin-right: -100px;
+    .iPhones__wrapper {
+        width: 249px;
+        height: 336px;
+        margin-left: 0;
     }
 
-    .iPhone133__wrapper {
-        display: flex;
-        position: relative;
+    .iPhones__wrapper img{
+        height: auto;
+        width: auto;
     }
 
-    .iPhone13 {
-        width: 135.9px;
-        height: 274.99px;
-    }
 
-    .iPhone133 {
-        width: 136px;
-        height: 275px;
-        top: 65px;
-        right: -7%;
-        transform: translateX(60%);
-    }
 }
 
 @media screen and (min-width: 620px) and (max-width:799px) {
-    .iPhone13__wrapper {
-        height: 350px;
-    }
-
-    .iPhone133__wrapper {
-        height: 350px;
-    }
-
-    .iPhone13 {
-        width: 250px;
-        height: 100%;
-    }
-
-    .iPhone133 {
-        width: 250px;
-        height: 100%;
-    }
 
 }

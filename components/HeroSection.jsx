@@ -38,32 +38,9 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className={styles.heroSec__right}>
-                <div className={`${styles.iPhones} ${styles.heroPhonesSm}`}>
-                    <div className={styles.iPhones13__wrapper}>
+                    <div className={`${styles.iPhones}`}>
+                    <div className={styles.iPhones__wrapper}>
                         <Image
-                            className={styles.iPhone13}
-                            src='/assets/iPhone13.svg'
-                            width={300}
-                            height={400}
-                            alt=''
-                        />
-                    </div>
-                    <div className={styles.iPhones133__wrapper}>
-                        <Image
-                            className={styles.iPhone133}
-                            src='/assets/iPhone133.svg'
-                            width={300}
-                            height={400}
-                            alt=''
-                        />
-                    </div>
-
-                    </div>
-
-                    <div className={`${styles.iPhones} ${styles.heroPhonesLg}`}>
-                    <div className={styles.iPhonesLg__wrapper}>
-                        <Image
-                            // className={styles.iPhone133}
                             src='/assets/phoneHeroLg.png'
                             width={614}
                             height={754}

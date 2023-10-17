@@ -38,9 +38,9 @@ const Navbar = ({ scrollToSection }) => {
                 </a>
             </div>
             <Drawer onClick={toggleDrawer} hideBackdrop={true} PaperProps={{ style: { marginTop: '85px' } }} anchor="top" open={isDrawerOpen} onClose={toggleDrawer}>
-                {isDrawerOpen && <IconButton className={`${styles.menuIcon} ${styles.closeIcon}`} onClick={toggleDrawer}>
+               <IconButton className={`${styles.menuIcon} ${styles.closeIcon}`} >
                     <Close style={{ height: '38px', width: '38px' }} />
-                </IconButton>}
+                </IconButton>
                 <div className={styles.drawerContent}>
                     {/* <a href='#_section'>About</a> */}
                     <a onClick={() => scrollToSection('#feature_section')} href='#feature_section' >Features</a>
