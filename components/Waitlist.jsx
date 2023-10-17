@@ -24,10 +24,23 @@ export default function WaitListModal({ toggleWaitListModal, isModalOpen, device
         });
     };
 
+    const isEmailValid = (email) => {
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailRegex.test(email);
+    };
+
     const handleSubmit = async (e) => {
         setIsLoading(true)
         setIsError(false)
         e.preventDefault();
+
+        if (!formData.name || !formData.email || !isEmailValid(formData.email)) {
+            setIsError(true);
+            setIsLoading(false);
+            return;
+        }
+
+
         try {
             const response = await axios.post('https://spiral.onrender.com/waitlist', { ...formData, deviceType });
 
@@ -76,6 +89,7 @@ export default function WaitListModal({ toggleWaitListModal, isModalOpen, device
                             value={formData.email}
                             onChange={handleChange}
                             className={styles.input}
+                            required
                         />
                         <input
                             type="text"
@@ -84,6 +98,7 @@ export default function WaitListModal({ toggleWaitListModal, isModalOpen, device
                             value={formData.name}
                             onChange={handleChange}
                             className={styles.input}
+                            required
                         />
                         <input
                             type="text"
