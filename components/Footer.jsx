@@ -17,18 +17,18 @@ const Footer = () => {
             <div className={styles.contact__us}>
                 <div className={styles.contact__usLeft}>
                     <a
-                        href="mailto:info@youremail.com"
+                        href="mailto:hello@readspiral.com"
                         aria-label="Email"
                     >
                         <p>  <Mail className={styles.contact__usIcon} /></p>
-                        <p>info@youremail.com</p>
+                        <p>hello@readspiral.com</p>
                     </a>
                 </div>
                 <hr className={styles.contact__usDivider} />
                 <div className={styles.contact__usRight}>
                     <a
                         href="tel:+233546353625"
-                        aria-label="Email"
+                        aria-label="Phone"
                     >
                         <p><Call className={styles.contact__usIcon} /> </p>
                         <p>+233 54 635 3625</p>
@@ -57,7 +57,7 @@ const Footer = () => {
             <div className={styles.footer__bottom}>
                 <Copyright className={styles.copyrightIcon} />
                 <p>
-                    Copyright 2023 Spiral. All Right Reserved.
+                    Copyright 2023 Spiral Inc. All Right Reserved.
                 </p>
             </div>
         </div>
