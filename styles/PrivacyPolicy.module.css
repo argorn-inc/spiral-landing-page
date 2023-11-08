@@ -1,0 +1,139 @@
+.navbar__wrapper {
+    padding-right: 100px;
+}
+
+.numbering {
+    display: flex;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    padding: 0 120px;
+}
+
+.topImg__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-image: url('../public/assets/policy-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+}
+
+.topImg__container p {
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFF;
+}
+
+.privacy_policy {
+    margin-top: 50px;
+}
+
+.privacy_policy,
+.subsection,
+.section,
+.privacy_policy p,
+.privacy_policy h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.section>p {
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.subsection {
+    margin-bottom: 40px !important;
+}
+
+.subsection p {
+    line-height: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.subsection ul {
+    list-style: none;
+}
+
+.subsection span {
+    text-transform: lowercase;
+}
+
+
+
+.section h2 p {
+    margin-right: 5px;
+}
+
+@media screen and (max-width:800px) {
+    .page {
+        padding: 0 20px;
+    }
+
+    .topImg__container {
+        margin-top: 20px;
+        width: 100%;
+        background-image: url('../public/assets/policy-img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .topImg__container p {
+        font-size: 26px;
+    }
+
+.privacy_policy{
+margin-top: -20px;
+}
+    .numbering {
+        display: none;
+    }
+
+
+    .hide_intro_text,
+    .hide_intro_title {
+        display: none;
+    }
+
+    .subsection>p {
+        font-weight: 700;
+    }
+
+    .hide__section {
+        display: none;
+    }
+
+    .navbar__wrapper {
+        padding: 0;
+    }
+
+    .section>p {
+        margin: 0;
+    }
+
+    .subsection>ul {
+        padding: 0;
+    }
+
+    .section h2 p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .section_title {
+        display: flex;
+        align-items: center;
+    }
+}
