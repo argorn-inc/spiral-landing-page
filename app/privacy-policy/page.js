@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../../styles/PrivacyPolicy.module.css";
 import { privacyPolicyContent } from "@/constant/text";
 import { numbering } from "@/utils/numbering";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
@@ -66,6 +67,7 @@ const page = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

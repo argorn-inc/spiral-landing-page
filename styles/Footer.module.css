@@ -125,6 +125,21 @@
     margin-right: 15px;
 }
 
+.condtions{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+.links{
+    color: #fff;
+    font-size: 26px;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    margin: 0 30px;
+
+}
+
 @media (max-width: 800px) {
     .footer {
         height: 180px;
