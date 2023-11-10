@@ -30,7 +30,7 @@ const Navbar = ({ scrollToSection }) => {
             </IconButton>
 
             <div className={styles.navbar__right}>
-                {/* <a href='#_section'>About</a> */}
+                <a href='#_section'>About</a>
                 <a onClick={() => scrollToSection('#feature_section')} href='#feature_section'>Features</a>
                 <a onClick={() => scrollToSection('#footer_section')} href='#footer_section' >Contact</a>
                 <a href='https://spiraldevotionalapp.netlify.app/'>
@@ -42,7 +42,7 @@ const Navbar = ({ scrollToSection }) => {
                     <Close style={{ height: '38px', width: '38px' }} />
                 </IconButton>
                 <div className={styles.drawerContent}>
-                    {/* <a href='#_section'>About</a> */}
+                    <a href='#_section'>About</a>
                     <a onClick={() => scrollToSection('#feature_section')} href='#feature_section' >Features</a>
                     <a onClick={() => scrollToSection('#footer_section')} href='#footer_section'>Contact</a>
 
