@@ -154,3 +154,8 @@ export const privacyPolicyContent = [
     ],
   },
 ];
+
+export const appLinks={
+  playstore:'https://play.google.com/store/apps/details?id=com.spiraldevotional',
+  appstore:'#/playstore',
+}

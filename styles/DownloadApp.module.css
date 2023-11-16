@@ -12,7 +12,7 @@
     width: 60%;
 }
 
-.download__bottons img {
+.download__bottons a  {
     margin-top: 55px;
     height: 60px;
     width: 160px;
