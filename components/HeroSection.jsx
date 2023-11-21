@@ -2,8 +2,12 @@ import React from "react";
 import styles from "../styles/HeroSection.module.css";
 import { appLinks, homeText } from "@/constant/text";
 import Image from "next/image";
+import { detectDeviceType } from "@/utils/detectDeviceType";
 
 const HeroSection = ({ toggleWaitListModal }) => {
+  const deviceType = detectDeviceType();
+  const isDesktop = deviceType === 'Desktop';
+
   return (
     <div className={styles.heroSection}>
       <div className={styles.heroSec__left}>
@@ -23,24 +27,28 @@ const HeroSection = ({ toggleWaitListModal }) => {
         <div className={styles.download}>
           <p>GET EARLY ACCESS</p>
           <div className={styles.download__bottons}>
-          <a href={appLinks.playstore} target="_blank" rel="noreferrer">
-            <Image
-              src="/assets/playstore.svg"
-              width={200}
-              height={400}
-              alt=""
-             
-            />
-          </a>
-          <a href={appLinks.appstore} target="_blank" rel="noreferrer">
-            <Image
-              src="/assets/appstore.svg"
-              width={200}
-              height={400}
-              alt=""
-              onClick={() => toggleWaitListModal("ios")}
-            />
-          </a>
+            {(isDesktop || deviceType === 'iOS') && (
+              <a href={appLinks.appstore} target="_blank" rel="noreferrer">
+                <Image
+                  src="/assets/appstore.svg"
+                  width={200}
+                  height={400}
+                  alt=""
+                  onClick={() => toggleWaitListModal("ios")}
+                />
+              </a>
+            )}
+            {(isDesktop || deviceType === 'Android') && (
+              <a href={appLinks.playstore} target="_blank" rel="noreferrer">
+                <Image
+                  src="/assets/playstore.svg"
+                  width={200}
+                  height={400}
+                  alt=""
+                  onClick={() => toggleWaitListModal("android")}
+                />
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -62,24 +70,28 @@ const HeroSection = ({ toggleWaitListModal }) => {
       <div className={`${styles.download} ${styles.download__sm}`}>
         <p>GET EARLY ACCESS</p>
         <div className={styles.download__bottons}>
-          <a href={appLinks.playstore} target="_blank" rel="noreferrer">
-            <Image
-              src="/assets/playstore.svg"
-              width={200}
-              height={400}
-              alt=""
-              onClick={() => toggleWaitListModal("android")}
-            />
-          </a>
-          <a href={appLinks.appstore} target="_blank" rel="noreferrer">
-            <Image
-              src="/assets/appstore.svg"
-              width={200}
-              height={400}
-              alt=""
-              onClick={() => toggleWaitListModal("ios")}
-            />
-          </a>
+          {(isDesktop || deviceType === 'Android') && (
+            <a href={appLinks.playstore} target="_blank" rel="noreferrer">
+              <Image
+                src="/assets/playstore.svg"
+                width={200}
+                height={400}
+                alt=""
+                onClick={() => toggleWaitListModal("android")}
+              />
+            </a>
+          )}
+          {(isDesktop || deviceType === 'iOS') && (
+            <a href={appLinks.appstore} target="_blank" rel="noreferrer">
+              <Image
+                src="/assets/appstore.svg"
+                width={200}
+                height={400}
+                alt=""
+                onClick={() => toggleWaitListModal("ios")}
+              />
+            </a>
+          )}
         </div>
       </div>
     </div>
