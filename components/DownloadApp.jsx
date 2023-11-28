@@ -1,9 +1,14 @@
+"use client"
 import React from "react";
 import { appLinks, homeText } from "@/constant/text";
 import styles from "../styles/DownloadApp.module.css";
 import Image from "next/image";
+import { detectDeviceType } from "@/utils/detectDeviceType";
 
 const DownloadApp = ({ toggleWaitListModal }) => {
+  const deviceType = detectDeviceType();
+  const isDesktop = deviceType === 'Desktop';
+
   return (
     <div className={styles.downloadApp}>
       <div className={styles.downloadApp__left}>
@@ -11,24 +16,28 @@ const DownloadApp = ({ toggleWaitListModal }) => {
           <p>{homeText.downloadAPP_lgTxt}</p>
           <span>{homeText.downloadAPP_smTxt}</span>
         </div>
-        <div className={styles.download__bottons}>
-          <a href={appLinks.playstore} target="_blank" rel="noreferrer">
-            <Image
-              src="/assets/playstore.svg"
-              width={200}
-              height={400}
-              alt="play store"
-            />
-          </a>
-          <a href={appLinks.appstore} target="_blank" rel="noreferrer">
-          <Image
-            src="/assets/appstore.svg"
-            width={200}
-            height={400}
-            alt="app store"
-            onClick={() => toggleWaitListModal("ios")}
-          />
-          </a>
+        <div className={styles.download__buttons}>
+          {(isDesktop || deviceType === 'iOS') && (
+            <a href={appLinks.appstore} target="_blank" rel="noreferrer">
+              <Image
+                src="/assets/appstore.svg"
+                width={200}
+                height={400}
+                alt="app store"
+                onClick={() => toggleWaitListModal("ios")}
+              />
+            </a>
+          )}
+          {(isDesktop || deviceType === 'Android') && (
+            <a href={appLinks.playstore} target="_blank" rel="noreferrer">
+              <Image
+                src="/assets/playstore.svg"
+                width={200}
+                height={400}
+                alt="play store"
+              />
+            </a>
+          )}
         </div>
       </div>
 

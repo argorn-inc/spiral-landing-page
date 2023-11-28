@@ -8,6 +8,7 @@ import Footer from '@/components/Footer'
 import DownloadApp from '@/components/DownloadApp'
 import WaitListModal from '@/components/Waitlist';
 
+
 export default function Home() {
   const featureRef = useRef(null);
   const footerRef = useRef(null);
